@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3477a3;
+    color: #315468;
+    font-family: 'Lato', sans-serif;
+    padding: 1em;
+
+    .container {
+        max-width: 1150px;
+        margin: auto;
+        padding: 1em;
+
+        .brand {
+            font-weight: 900;
+            margin: 20px auto;
+            color: #dbdfe2;
+            text-align: center;
+        }
+
+        .wrapper {
+            box-shadow: 0 0 20px 0 rgba(#000, .6);
+
+            .company-info {
+                background: #89b2cc;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin: 5px;
+                    }
+                }
+
+                h3 {
+                    font-weight: 900;
+                }
+
+                ul,
+                h3 {
+                    margin: 0 0 1rem 0;
+                    text-align: center;
+                }
+            }
+
+            .contact {
+                background: #c5dbf0;
+
+                .form {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 25px;
+                    margin-top: 10px;
+
+                    input,
+                    textarea {
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 1em;
+                        border: 1px solid #315468;
+                        outline: none;
+                        transition: border .3s ease;
+                    }
+
+                    input:focus,
+                    textarea:focus {
+                        border: 1px solid #71a8ca;
+                    }
+
+                    textarea {
+                        resize: none;
+                        overflow: hidden;
+                    }
+
+                    .full-width {
+                        grid-column: 1/3;
+
+                        .submit {
+                            background: #89b2cc;
+                            cursor: pointer;
+                            transition: background-color .3s ease;
+                        }
+
+                        .submit:hover {
+                            color: #fff;
+                            background: #315468;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wrapper>* {
+            padding: 1em;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .full-width {
+            grid-column: 1/3;
+        }
+    }
+
+    .wrapper>* {
+        padding: 2em !important;
+    }
+
+    .brand,
+    ul,
+    h3 {
+        text-align: left !important;
+    }
+}
