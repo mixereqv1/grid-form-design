@@ -26,6 +26,8 @@ body .container .brand {
 
 body .container .wrapper {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 body .container .wrapper .company-info {

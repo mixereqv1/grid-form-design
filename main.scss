@@ -24,6 +24,8 @@ body {
 
         .wrapper {
             box-shadow: 0 0 20px 0 rgba(#000, .6);
+            border-radius: 8px;
+            overflow: hidden;
 
             .company-info {
                 background: #89b2cc;
@@ -94,7 +96,7 @@ body {
             }
         }
 
-        .wrapper>* {
+        .wrapper > * {
             padding: 1em;
         }
     }
